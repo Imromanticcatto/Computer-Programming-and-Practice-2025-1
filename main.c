@@ -3,7 +3,7 @@
  * 주어진 print_3chars, input_char 함수를 활용해서 
  * 문자 세개를 입력받고, 화면에 입력받은 문자들을 출력해보세요.
  */
-
+#include <stdio.h>
 /* 
  * print_3chars 함수
  *
@@ -39,7 +39,18 @@ char input_char();
 
 int main() {
 	/* To Do: 주어진 함수들을 활용해서 문자 세개를 입력받고, 화면에 출력해보세요 */
+	char a = input_char();
+	char b = input_char();
+	char c = input_char();
 
+
+	print_3chars(a, b, c);
+	/*
+	만약
+	a
+	b
+	이런식으로 입력하게되면 a= a, b=\n, c=b 이렇게 들어가게 된다.
+	*/
 	
 	return 0;
 }
